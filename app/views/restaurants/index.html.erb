@@ -1,0 +1,11 @@
+<div class="container mt-3 text-center">
+  <h1>Restaurants</h1>
+  <div class="cards mt-3">
+    <% @restaurants.each do |restaurant|  %>
+      <%= link_to restaurant_path(restaurant), class:"text-decoration-none" do %>
+        <%= render 'cards', restaurant: restaurant %>
+      <% end %>
+    <% end %>
+  </div>
+  <%= link_to 'Add New Restaurant', new_restaurant_path, class:'btn btn-info text-white btn-lg mt-5' %>
+</div>

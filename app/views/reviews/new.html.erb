@@ -1,0 +1,8 @@
+<div class="container mt-3">
+  <h1>Add Review for <%= @restaurant.name %></h1>
+  <%= render 'form' %>
+</div>
+
+<div class="container  mt-3">
+  <%= link_to "Go back", restaurant_path(@restaurant), class:"text-decoration-none" %>
+</div>
